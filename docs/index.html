@@ -2,54 +2,99 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Rayhan | Software Student</title>
+  <title>Rayhan | Developer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
-    body {
+    * {
+      box-sizing: border-box;
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0f172a;
-      color: #e5e7eb;
+      padding: 0;
     }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #020617, #0f172a);
+      color: #e5e7eb;
+      line-height: 1.6;
+    }
+
     header {
-      background: #020617;
-      padding: 20px;
+      padding: 60px 20px;
       text-align: center;
     }
+
     header h1 {
-      margin: 0;
+      font-size: 2.5rem;
       color: #38bdf8;
     }
-    nav {
+
+    header p {
       margin-top: 10px;
+      font-size: 1.1rem;
+      opacity: 0.8;
     }
+
+    nav {
+      margin-top: 25px;
+    }
+
     nav a {
       color: #e5e7eb;
-      margin: 0 10px;
+      margin: 0 12px;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 500;
     }
-    section {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-    h2 {
+
+    nav a:hover {
       color: #38bdf8;
     }
-    footer {
+
+    section {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 30px;
+    }
+
+    .card {
       background: #020617;
+      border-radius: 12px;
+      padding: 30px;
+      margin-bottom: 30px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    }
+
+    h2 {
+      color: #38bdf8;
+      margin-bottom: 15px;
+    }
+
+    footer {
       text-align: center;
-      padding: 15px;
+      padding: 20px;
       font-size: 14px;
+      opacity: 0.7;
+    }
+
+    /* Mobile responsive */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      nav a {
+        display: inline-block;
+        margin: 8px;
+      }
     }
   </style>
 </head>
+
 <body>
 
 <header>
   <h1>Abdullah Al Mahmud Raihan</h1>
-  <p>Software Student | Future Tech Guy</p>
+  <p>Software Student • Future Developer • Tech Enthusiast</p>
+
   <nav>
     <a href="#home">Home</a>
     <a href="#about">About</a>
@@ -59,37 +104,46 @@
 </header>
 
 <section id="home">
-  <h2>Welcome</h2>
-  <p>
-    Hi, I’m Rayhan. I’m a software student learning web development and building
-    my personal website step by step.
-  </p>
+  <div class="card">
+    <h2>Welcome</h2>
+    <p>
+      Hi, I’m Rayhan. I’m learning software development and building my personal
+      website to document my journey and projects.
+    </p>
+  </div>
 </section>
 
 <section id="about">
-  <h2>About Me</h2>
-  <p>
-    My full name is Abdullah Al Mahmud Raihan. I love technology and want to
-    become a professional developer. This site will grow as I learn more.
-  </p>
+  <div class="card">
+    <h2>About Me</h2>
+    <p>
+      My full name is Abdullah Al Mahmud Raihan. I’m passionate about technology,
+      problem-solving, and becoming a professional developer.
+    </p>
+  </div>
 </section>
 
 <section id="experience">
-  <h2>Experience</h2>
-  <p>
-    Currently learning HTML, CSS, and JavaScript. More projects coming soon.
-  </p>
+  <div class="card">
+    <h2>Experience</h2>
+    <p>
+      Currently learning HTML, CSS, and JavaScript. More projects and skills
+      will be added here soon.
+    </p>
+  </div>
 </section>
 
 <section id="blog">
-  <h2>Blog</h2>
-  <p>
-    I will share my learning journey, tips, and projects here.
-  </p>
+  <div class="card">
+    <h2>Blog</h2>
+    <p>
+      I’ll share what I learn, mistakes I make, and how I grow as a developer.
+    </p>
+  </div>
 </section>
 
 <footer>
-  © 2025 Rayhan | Built with GitHub Pages
+  © 2025 Rayhan • Built with GitHub Pages
 </footer>
 
 </body>
