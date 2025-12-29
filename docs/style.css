@@ -112,11 +112,10 @@ nav a.active {
 
 /* HERO IMAGE */
 .hero-image {
-  flex: 1;
-  min-width: 340px;
   position: relative;
-  text-align: center;
-  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .circle-bg {
@@ -125,19 +124,21 @@ nav a.active {
   background-color: #38bdf8;
   border-radius: 50%;
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: -1;
+  z-index: 0;
 }
 
+
 .hero-image img {
-  width: 340px;
+  width: 380px;              /* IMAGE BIGGER than circle */
   border-radius: 50%;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
   position: relative;
-  z-index: 1;
+  z-index: 2;                /* image ABOVE circle */
+  box-shadow: 0 25px 50px rgba(0,0,0,0.6);
 }
+
 
 /* FOOTER */
 footer {
@@ -160,16 +161,17 @@ footer {
   }
 
   .circle-bg {
-    width: 200px;
-    height: 200px;
+    width: 220px;
+    height: 220px;
   }
 
   .hero-image img {
-    width: 180px;
+    width: 280px;
   }
 
   nav {
     margin-top: 10px;
   }
 }
+
 
