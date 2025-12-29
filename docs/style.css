@@ -113,7 +113,7 @@ nav a.active {
 /* HERO IMAGE */
 .hero-image {
   flex: 1;
-  min-width: 280px;
+  min-width: 340px;
   position: relative;
   text-align: center;
   margin-top: 40px;
@@ -132,7 +132,7 @@ nav a.active {
 }
 
 .hero-image img {
-  width: 280px;
+  width: 340px;
   border-radius: 50%;
   box-shadow: 0 20px 40px rgba(0,0,0,0.5);
   position: relative;
