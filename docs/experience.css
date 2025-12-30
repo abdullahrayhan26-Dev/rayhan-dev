@@ -1,1 +1,188 @@
+/* EXPERIENCE INTRO */
+.exp-intro {
+  padding: 80px 20px;
+}
+
+.exp-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.exp-visual {
+  position: relative;
+  width: 420px;
+  height: 420px;
+}
+
+.exp-circle {
+  width: 320px;
+  height: 320px;
+  background: #38bdf8;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+.exp-img {
+  border-radius: 50%;
+  position: absolute;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+}
+
+.big-img {
+  width: 340px;
+  top: 40px;
+  left: 40px;
+  z-index: 2;
+}
+
+.small-img {
+  width: 140px;
+  bottom: 10px;
+  right: 0;
+  z-index: 3;
+}
+
+.exp-text h1 {
+  font-size: 2.5rem;
+  color: #38bdf8;
+}
+
+.exp-text p {
+  margin-top: 15px;
+  opacity: 0.8;
+}
+
+/* TIMELINE */
+.timeline {
+  max-width: 900px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+.timeline h2 {
+  color: #38bdf8;
+  margin-bottom: 40px;
+}
+
+.timeline-item {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.time-tag {
+  background: #38bdf8;
+  color: #0f172a;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.timeline-content {
+  background: #020617;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1;
+}
+
+/* PROJECTS */
+.projects {
+  padding: 80px 20px;
+}
+
+.projects h2 {
+  text-align: center;
+  color: #38bdf8;
+}
+
+.project-grid {
+  max-width: 1000px;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.project-card {
+  background: #020617;
+  padding: 25px;
+  border-radius: 15px;
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+}
+
+.project-card img {
+  width: 40px;
+  margin-bottom: 15px;
+}
+
+.type-two {
+  border: 1px solid #38bdf8;
+}
+
+/* SKILLS */
+.skills {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.skills h2 {
+  color: #38bdf8;
+}
+
+.skills-grid {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.skills-grid img {
+  width: 50px;
+  opacity: 0.85;
+  transition: transform 0.3s;
+}
+
+.skills-grid img:hover {
+  transform: scale(1.2);
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .exp-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .exp-visual {
+    width: 300px;
+    height: 300px;
+  }
+
+  .exp-circle {
+    width: 220px;
+    height: 220px;
+  }
+
+  .big-img {
+    width: 240px;
+    left: 30px;
+  }
+
+  .small-img {
+    width: 100px;
+  }
+}
 
